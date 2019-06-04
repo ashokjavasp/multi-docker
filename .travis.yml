@@ -5,8 +5,8 @@ services:
 before_install:
   - docker build -t ashokalex/react-test -f ./client/Dockerfile.dev ./client
 
-script:
- - travis_wait docker run ashokalex/react-test npm test -- --coverage
+#script:
+ #- travis_wait docker run ashokalex/react-test npm test -- --coverage
 
 
 after_sucess:
